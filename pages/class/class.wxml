@@ -1,0 +1,82 @@
+<!--pages/class/class.wxml-->
+<view class="pages" >
+    <block wx:if = "{{pageshow == 'title'}}">
+        <view class = "content">
+          <view class="button_view">
+            <view class="buttonImages">
+              <image id="感冒头痛怎么办" class="buttonImages" bindtap="articleShow"  src="../../images/eye.png"></image>
+            </view>
+            <view class="button">
+              <button id="感冒头痛怎么办" class='goodbutton'  bindtap="articleShow" hover-class="hover">感冒头痛怎么办</button>
+            </view>
+          </view>
+          <view class="button_view">
+            <view class="buttonImages">
+              <image id="经常犯困没精神怎么回事" class="buttonImages"  bindtap="articleShow" src="../../images/reason.png"></image>
+            </view>
+            <view class="button">
+              <button id="经常犯困没精神怎么回事" class='goodbutton' bindtap="articleShow" hover-class="hover">经常犯困没精神怎么回事</button>
+            </view>
+          </view>
+          <view class="button_view">
+            <view class="buttonImages">
+              <image id="如何预防腰间盘突出" class="buttonImages" bindtap="articleShow" src="../../images/harm.png"></image>
+            </view>
+            <view class="button">
+              <button id="如何预防腰间盘突出" class='goodbutton' bindtap="articleShow" hover-class="hover">如何预防腰间盘突出</button>
+            </view>
+          </view>
+          <view class="button_view" bindtap="articleShow">
+            <view class="buttonImages">
+              <image id="如何预防老年痴呆" class="buttonImages" src="../../images/check.png"></image>
+            </view>
+            <view class="button">
+              <button id="如何预防老年痴呆" class='goodbutton' hover-class="hover">如何预防老年痴呆</button>
+            </view>
+          </view>
+          <view class="button_view" bindtap="articleShow">
+            <view class="buttonImages">
+              <image id="青光眼的治疗" class="buttonImages" src="../../images/care.png"></image>
+            </view>
+            <view class="button">
+              <button id="青光眼的治疗" class='goodbutton' hover-class="hover">青光眼的治疗</button>
+            </view>
+          <block wx:if = "{{useridentity == 1}}" bindtap = "editEssay">
+            <view class="buttonImages">
+              <image class="buttonImages" src="../../images/care.png"></image>
+            </view>
+            <view class="button" >
+              <button class='goodbutton' hover-class="hover">设计者可见入口</button>
+            </view>
+          </block>
+          </view>
+        </view>
+    </block >
+    <block wx:elif ="{{pageshow == 'content'}}">
+      <view class="essaybackground" >
+        
+        <!-- <block wx:for = "{{essaycontent}}" wx:key = "id" wx:for-index = 'fatherindex'>-->
+          <view class="imageground" >
+            <image class = "articleImage" src="{{essay.image}}"></image>
+          </view>
+          
+          <view class = "hoverarticle" wx:for = "{{essay.section}}" wx:key = "title" wx:for-index = "indexText">{{item}}</view>
+        <!--</block>-->
+      </view>
+    </block>
+    <block wx:elif ="{{pageshow == 'content'}}">
+      <view class = 'SAQ' >
+          <view class='SAQTitle'>
+            
+            <view class='SAQDiscription'>题目/图片地址/文章内容</view>
+            <view class='SAQquto'>:</view>
+            
+          </view>
+          <textarea auto-height='true' id = 'title' class = "SAQAnswer" value='' placeholder="题目" bindblur='bindblurInput' ></textarea>
+          <textarea auto-height='true' id = 'image' class = "SAQAnswer" value='' placeholder="图片地址" bindblur='bindblurInput' ></textarea>
+          <textarea auto-height='true' id = 'content' class = "SAQAnswer" value='' placeholder="文章内容" bindblur='bindblurInput' ></textarea>
+        </view>
+        <button class="weui-btn" type="primary" bindtap='DeveloperEditComplete'>完成</button>
+    </block>
+</view>
+

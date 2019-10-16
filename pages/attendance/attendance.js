@@ -51,7 +51,7 @@ Page({
     var that = this;
     var data = {
       seriesCount: 1,
-      signDays: [1, 4, 5, 9, 11, 12, 13, 14, 25, 26, 28]
+      signDays: [1, 4, 5, 9, 11, 12, 13, 14,]
     };
     var $datas = data;
     var signDate_arr = new Array();
@@ -165,7 +165,7 @@ Page({
 
     var $datas = {
       seriesCount: 1,
-      signDays: [1, 4, 5, 9, 11, 12, 13, 14, 25, 26, 28]
+      signDays: [1, 4, 5, 9, 11, 12, 13, 14,]
     };
     var anns = $datas.signDays;
     var signDate_arr = [];
@@ -214,7 +214,7 @@ Page({
 
     var $datas = {
       seriesCount: 1,
-      signDays: [1, 4, 5, 9, 11, 12, 13, 14, 25, 26, 28]
+      signDays: [1, 4, 5, 9, 11, 12, 13, 14]
     };
     var signDate_arr = new Array();
     var anns = $datas.signDays;

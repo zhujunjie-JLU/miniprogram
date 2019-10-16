@@ -3,7 +3,8 @@
     "pages/attendance/attendance",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/service/service"
+    "pages/service/service",
+    "pages/class/class"
   ],
   "window": {
     "backgroundTextStyle": "light",

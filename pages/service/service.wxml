@@ -1,2 +1,13 @@
 <!--pages/service/service.wxml-->
-<text>pages/service/service.wxml</text>
+<view class="page" style="height:{{windowHeight}}px">
+  <view class="page_block" bindtap="classClick">
+    <image class="block_image" style="height:{{imageHeight}}px " src="http://img0.imgtn.bdimg.com/it/u=1863789788,4272793076&fm=26&gp=0.jpg" mode="scaleToFill"></image>
+    <button style="height:{{buttonHeight}}px" class='goodbutton' hover-class="hover">小 葵 花 课 堂</button>
+  </view>
+<view class = "page_interval"></view>
+<!-- style="height:{{tabHeight}}px width:750rpx backgroud:red" -->
+  <view class="page_block2" bindtap="chatClick">
+    <image class="block_image" style="height:{{imageHeight}}px" src="../../images/waikefengyun.jpg" mode="scaleToFill"></image>
+    <button style="height:{{buttonHeight}}px" class='goodbutton' hover-class="hover">咨 询 医 生</button>
+  </view>
+</view>

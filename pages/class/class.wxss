@@ -1,0 +1,95 @@
+/* pages/class/class.wxss */
+.page{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  width: 750rpx;
+  height: 100%;
+  background: seashell;
+}
+.buttonImages{
+   margin-top: 10rpx;
+  /* margin-bottom: 20rpx; */ 
+  height: 100rpx;
+  width: 100rpx;
+}
+.button_view{
+  width:750rpx;
+  height:100%;
+  background: seashell;
+  display: flex;
+  flex-direction: row;
+}
+.goodbutton {
+  background: seashell;
+    /* margin-left: 0rpx; */
+  padding-left: 0rpx;
+  margin-left:0rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  width:650rpx;
+  border-style: solid;
+  border-width: 5rpx;
+  
+  /* background-color:white; */
+  color:rgb(105, 216, 224);
+  /* border-radius: 98rpx; */
+  /* background: bg_red; */
+}
+.hover {
+  background:  rgb(64, 216, 208);
+}
+.essaybackground{
+  background: rgb(146, 225, 228);
+  flex-direction: column;
+  margin-top: 10rpx;
+ 
+  display: flex;
+  align-items: center;
+}
+.imageground{
+  align-items: center;
+  display: flex;
+  height: 500rpx;
+  width: 750rpx
+}
+
+.articleImage{
+  width: 750rpx;
+  height: 80%;
+  
+  /*margin-left: 10rpx;*/
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  
+}
+.hoverarticle{
+  font-size: 1.2rem;
+  margin-left: 3rpx;
+  margin-right: 3rpx
+}
+.SAQ{
+  padding: 20rpx;
+    border: 2rpx solid #999;
+}
+.SAQTitle{
+  display: flex;
+  flex-direction: row;
+}
+.SAQDiscription{
+  /* border: 2rpx solid #999; */
+  width: 90%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+.SAQAnswer{
+  border: 2px solid #999;
+}
+.weui-btn{
+  width: 50%;
+  margin-bottom: 20rpx;
+}
