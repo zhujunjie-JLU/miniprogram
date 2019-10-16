@@ -1,14 +1,41 @@
 {
   "pages": [
-    "pages/user_login/user_login",
+    "pages/attendance/attendance",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/service/service"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "智慧医疗",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#4a90e2",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/attendance/attendance",
+        "iconPath": "images/icon_attendance.png",
+        "selectedIconPath": "images/icon_attendanceSelect.png",
+        "text": "签到"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "iconPath": "images/icon_service.png",
+        "selectedIconPath": "images/icon_serviceSelect.png",
+        "text": "专享服务"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_index.png",
+        "selectedIconPath": "images/icon_indexSelect.png",
+        "text": "个人中心"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
