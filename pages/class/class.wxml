@@ -36,10 +36,10 @@
           </view>
           <view class="button_view" bindtap="articleShow">
             <view class="buttonImages">
-              <image id="青光眼的治疗" class="buttonImages" src="../../images/care.png"></image>
+              <image id="年轻人脱发的原因" class="buttonImages" src="../../images/care.png"></image>
             </view>
             <view class="button">
-              <button id="青光眼的治疗" class='goodbutton' hover-class="hover">青光眼的治疗</button>
+              <button id="年轻人脱发的原因" class='goodbutton' hover-class="hover">年轻人脱发的原因</button>
             </view>
           <block wx:if = "{{useridentity == 1}}" bindtap = "editEssay">
             <view class="buttonImages">
