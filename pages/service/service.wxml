@@ -6,7 +6,7 @@
   </view>
 <view class = "page_interval"></view>
 <!-- style="height:{{tabHeight}}px width:750rpx backgroud:red" -->
-  <view class="page_block2" bindtap="chatClick">
+  <view class="page_block2" bindtap="inviteClick">
     <image class="block_image" style="height:{{imageHeight}}px" src="../../images/waikefengyun.jpg" mode="scaleToFill"></image>
     <button style="height:{{buttonHeight}}px" class='goodbutton' hover-class="hover">邀 请 用 户</button>
   </view>

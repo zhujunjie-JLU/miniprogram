@@ -1,0 +1,20 @@
+<!--pages/invite/invite.wxml-->
+<view class="headers">
+    <view class="topbj light " >
+        <view class="total ">
+            <image class='weather-bg'  src='../../images/waikefengyun.jpg'></image>
+            <view class="score1">填写被邀请者姓名后点击确认自动生成邀请码:</view>
+            <view class="score2">{{invitecode}}</view>
+            <view class = 'SAQ' data-id='{{fatherIndex}}'>
+              <view class='SAQTitle'>
+                <text class='SAQDiscription' >填写被邀请者姓名：</text>
+              </view>
+              <textarea auto-height='true' class = "SAQAnswer" value='{{inviteCode}}' bindblur='invcode' ></textarea>
+              <view class='SAQTitle'>
+                <text class='SAQDiscription' >邀请码出现后请截图保存</text>
+              </view>
+            </view> 
+        </view>
+        <button class="weui-btn" type="primary" bindtap='complete'>确认</button>
+    </view>
+</view>

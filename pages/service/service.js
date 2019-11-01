@@ -16,9 +16,9 @@ Page({
       url: '../class/class'
     })
   },
-  chatClick: function () {
+  inviteClick: function () {
     wx.navigateTo({
-      url: '../chat/chat'
+      url: '../invite/invite'
     })
   },
   getWindowHeight: function () {

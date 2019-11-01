@@ -1,0 +1,55 @@
+/* pages/invite/invite.wxss */
+/* pages/addpeople/addpeople.wxss */
+.topbj {
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.total {
+  /*position: relative;*/
+  margin: auto;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 0.1rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.score1{
+  background-color: #E3E3E3;
+  font-size: 1rem;
+  padding: 10rpx;
+}
+.score2{
+  background-color: #E3E3E3;
+  font-size: 1rem;
+  padding: 10rpx;
+  text-align:center;
+}
+.SAQ{
+  padding: 10rpx;
+  /*border: 2rpx solid #999;*/
+}
+.SAQTitle{
+  display: flex;
+  flex-direction: row;
+}
+.SAQDiscription{
+  /* border: 2rpx solid #999; */
+  width: 90%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+.SAQAnswer{
+  border-color: #ffffff  #ffffff  #999 #ffffff;
+  border-style:solid;
+  border-width:1px;
+  padding: 20rpx;
+}
+.weui-btn{
+  width: 50%;
+  margin-bottom: 20rpx;
+}
+.weather-bg{
+  width: 750rpx;
+}
