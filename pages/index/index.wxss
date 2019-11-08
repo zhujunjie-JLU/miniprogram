@@ -1,10 +1,34 @@
 /**index.wxss**/
+.page{
+  display: flex;
+  flex-direction: column;
+  
+}
+.banner{
+  width:750rpx;
+  height: 400rpx;
+}
+.info{
+background:yellow;
+}
+.button_view{
+  width:750rpx;
+  height:100%;
+  background: seashell;
+  display: flex;
+  flex-direction: row;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top:70rpx;
 }
-
+.content{
+  width: 750rpx;
+  height: 100%;
+  background: seashell;
+}
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
@@ -13,9 +37,41 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: rgb(241, 26, 127);
 }
 
-.usermotto {
-  margin-top: 200px;
+.goodbutton {
+  background: seashell;
+    /* margin-left: 0rpx; */
+  padding-left: 0rpx;
+  margin-left:0rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  width:650rpx;
+  /* background-color:white; */
+  color:fuchsia;
+  /* border-radius: 98rpx; */
+  /* background: bg_red; */
+}
+ .goodbutton::after{
+border: none;
+ }
+/* 按下变颜色 */
+.hover {
+  background:  rgb(236, 179, 156);
+}
+.button{
+  display:flex;
+  flex-direction: row;
+  width: 650rpx;
+  height: 100%;
+  /* background:silver; */
+
+}
+.buttonImages{
+   margin-top: 10rpx;
+  /* margin-bottom: 20rpx; */ 
+  height: 100rpx;
+  width: 100rpx;
 }

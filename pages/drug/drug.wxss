@@ -1,0 +1,39 @@
+/* pages/drug/drug.wxss */
+/* pages/drug/drug.wxss */
+.pages{
+  display: flex;
+  flex-direction: column;
+}
+.medicine{
+  width: 750rpx;
+  /*padding: 20rpx;*/
+  border: 2rpx solid #999;
+  margin-bottom: 10rpx
+  
+}
+.title{
+  display: flex;
+  background: rgb(146, 225, 228); 
+  padding-left: 10rpx;
+}
+.body{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx solid #999;
+}
+.date{
+  width: 200rpx;
+  padding-left: 10rpx;
+  border-right: 2rpx solid #999;
+  height: 100rpx;
+  
+
+}
+.drug{
+  width: 600rpx;
+  height: 100rpx;
+}
+
+

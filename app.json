@@ -5,7 +5,12 @@
     "pages/logs/logs",
     "pages/service/service",
     "pages/class/class",
-    "pages/invite/invite"
+    "pages/invite/invite",
+    "pages/survey/survey",
+    "pages/integration/integration",
+    "pages/data/data",
+    "pages/drug/drug",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",

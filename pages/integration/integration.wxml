@@ -1,0 +1,10 @@
+<!--pages/integration/integration.wxml-->
+<!--pages/integration/integration.wxml-->
+<view class="page">
+    <view class="topbj light text-center ">
+        <view class="total ">
+            <view class="score1">{{score}}</view>
+            <view class="score2">积分</view>
+        </view>
+    </view>
+</view>

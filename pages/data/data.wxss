@@ -1,0 +1,50 @@
+/* pages/data/data.wxss */
+/* pages/data/data.wxss */
+#title{
+  display: flex;
+  flex-direction: row;
+  background-color: #E3E3E3;
+  padding: 30rpx;
+}
+.titlePriceIcon{
+  width: 60rpx;
+  position: absolute;
+  right: 120rpx;
+}
+
+.titleContent{
+  margin-left: 50rpx;
+}
+
+.priceContent{
+  position: absolute;
+  right: 120rpx;
+  margin-right: 20rpx
+}
+
+.priceUnit{
+  position: absolute;
+  right: 20rpx;
+  margin-left: 30rpx
+}
+.answer{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 90%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+.SCQ{
+  padding: 20rpx;
+  border: 2rpx solid #999;
+}
+.SCQTitle{
+  display: flex;
+  flex-direction: row;
+}
+.SCQDiscription{
+  width: 90%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}

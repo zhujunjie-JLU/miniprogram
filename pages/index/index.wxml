@@ -1,13 +1,55 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="page">
+  <view class="banner" style="background:url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1962289891,3153731839&fm=26&gp=0.jpg')">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-nickname">欢迎使用智慧医疗平台</text>
+      </block>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+ <view class = "content">
+    <view class="button_view">
+      <view class="buttonImages">
+        <image class="buttonImages" bindtap="dataClick" src="../../images/data.png"></image>
+      </view>
+      <view class="button">
+        <button class='goodbutton'  bindtap="dataClick" hover-class="hover">个 人 资 料</button>
+      </view>
+    </view>
+    <view class="button_view">
+      <view class="buttonImages">
+        <image class="buttonImages"  bindtap="integrationClick" src="../../images/integration.png"></image>
+      </view>
+      <view class="button">
+        <button class='goodbutton' bindtap="integrationClick" hover-class="hover">我 的 积 分</button>
+      </view>
+    </view>
+    <view class="button_view">
+      <view class="buttonImages">
+        <image class="buttonImages" bindtap="drugClick" src="../../images/drug.png"></image>
+      </view>
+      <view class="button">
+        <button class='goodbutton' bindtap="drugClick" hover-class="hover">我 的 用 药</button>
+      </view>
+    </view>
+     <view class="button_view" bindtap="surveyClick">
+      <view class="buttonImages">
+        <image class="buttonImages" src="../../images/eyes.png"></image>
+      </view>
+      <view class="button">
+        <button class='goodbutton' hover-class="hover">问 卷 调 查</button>
+      </view>
+    </view>
+    <view class="button_view" bindtap="aboutClick">
+      <view class="buttonImages">
+        <image class="buttonImages" src="../../images/about.png"></image>
+      </view>
+      <view class="button">
+        <button class='goodbutton' hover-class="hover">关 于 小 程 序</button>
+      </view>
+    </view>
+ </view>
 </view>

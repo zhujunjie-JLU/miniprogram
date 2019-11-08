@@ -1,0 +1,16 @@
+<!--pages/about/about.wxml-->
+<!--pages/about/about.wxml-->
+
+<view class="page" style="height:{{windowHeight}}px">
+    <view class="topbj" style="height:{{windowHeight}}px" > 
+        <view class="information">
+            <text class="score1">尊敬的用戶您好！</text>
+            <text class="score1">根据您已知晓的相关协议，该小程序展示的资料都是您知情且同意的。您的资料只会由本项目研究者和用户本人可看到。</text>
+            <text class="score1">本项目实施方为吉林大学软件学院眼科中心，小程序为该项目的配套平台，该平台由吉林大院软件学院开发，并遵守微信平台的相关规则。</text>
+            <text class="score1">如您在使用中遇到无法操作，操作故障，显示错误，没有反应等技术问题，可通过以下方式提交反馈：</text>
+            <text class="score1">QQ：2102941277</text>
+            <text class="score1">email：2102941277@qq.com</text>
+            <text class="score1">电话等</text>
+        </view>
+    </view>   
+</view>

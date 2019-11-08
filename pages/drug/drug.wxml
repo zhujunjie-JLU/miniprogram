@@ -1,0 +1,13 @@
+<!--pages/drug/drug.wxml-->
+<!--pages/drug/drug.wxml-->
+<view class="pages">
+  <block wx:for = "{{prescription}}" wx:key = "id" wx:for-index = "fatherIndex">
+    <view class="medicine" >
+      <view class="body">
+        <view class="date">{{item.date}}</view>
+        <view class="drug">{{item.drug}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+
