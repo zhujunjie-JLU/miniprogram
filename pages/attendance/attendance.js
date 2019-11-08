@@ -16,7 +16,7 @@ Page({
     }],
     signs: [1, 2, 3, 5, 6, 7],
     signtype: "1",
-    signDays: [],
+    signDays: [1, 2, 3, 5, 6, 7],
     todayDate: "1",
     todayMonth: "",
     todayYear: "",
@@ -47,12 +47,17 @@ Page({
       var todayMonthss = todayMonth;
     }
     console.log(todayss);
+
+    
+
     var godates = todayYear + "-" + todayMonthss + "-01";
     var that = this;
     var data = {
       seriesCount: 1,
-      signDays: [1, 4, 5, 9, 11, 12, 13, 14,]
+      signDays: [1, 4, 5, 6, 7]
     };
+    data.seriesCount = 5;
+    data.signDays = this.data.signDays;
     var $datas = data;
     var signDate_arr = new Array();
     var anns = $datas.signDays;
@@ -100,6 +105,10 @@ Page({
     });
   },
   sign_start: function () {
+    var getToday = new Date();
+    var todayss = getToday.getDate();
+    var signday = this.data.signDays;
+    signday = signday.push(todayss);
     var powerData = 100;
     this.onLoad();
     //签到成功后重新调用后台接口加载新的签到数据
@@ -107,6 +116,7 @@ Page({
       for_signs: "block",
       signtype: "2",
       powerData: powerData,
+      signDays: signday
     });
     wx.showToast({
       title: '签到成功',
